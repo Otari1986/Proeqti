@@ -170,8 +170,8 @@ main {
   width: 100%;
 }
 .card .shadow {
-  width: 475px;
-  height: 473px;
+  width: 100%;
+  height: 475px;
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   top: 0;
@@ -553,6 +553,10 @@ footer {
   }
   .card {
     width: 100%;
+  }
+  main .card .shadow {
+    width: 100%;
+    height: 100%;
   }
   .get .left img {
     width: 200px;
