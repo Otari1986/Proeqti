@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  display: flex;
+  width: 100%;
+}
+main .left {
+  width: 50%;
+}
+main .left img {
+  width: 100%;
+}
+main .right {
+  width: 50%;
+  background-color: #fbf5e7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.right form {
+  padding: 50px;
+}
+.right form h1 {
+  margin-bottom: 50px;
+}
+.right form .area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.right form .area .up {
+  display: flex;
+  gap: 20px;
+}
+.right form .area .first {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.right form .area .last {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.right form .area .center {
+  display: flex;
+  gap: 20px;
+}
+.right form .area .email {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.right form .area .phone {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.right form .down {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.right form .long {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.right form .area input {
+  height: 45px;
+  border: 1px solid black;
+  outline: none;
+  background-color: transparent;
+  padding: 10px;
+}
+.right form .down textarea {
+  resize: none;
+  height: 100px;
+  border: 1px solid black;
+  outline: none;
+  background-color: transparent;
+  padding: 10px;
+}
+.right form .down button {
+  color: white;
+  padding: 10px;
+  background-color: #2f2b26;
+  transition: 0.5s;
+}
+.right form .down button:hover {
+  color: black;
+  background-color: white;
+}
+@media screen and (max-width: 1280px) {
+  main {
+    flex-direction: column;
+  }
+  main .left {
+    width: 100%;
+  }
+  main .right {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  main {
+    flex-direction: column;
+  }
+  main .left {
+    width: 100%;
+  }
+  main .right {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 650px) {
+  main .right form {
+    padding: 10px;
+  }
+}

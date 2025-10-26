@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+nav {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  height: 50px;
+  padding-inline: 30px !important;
+  font-family: play;
+}
+.aqtiuri {
+  color: #dcba65;
+}
+.aqtiuri:hover {
+  color: #dcba65;
+}
+.fa-web-awesome {
+  font-size: 30px;
+  margin-right: 20px;
+  color: #dcba65;
+  animation: animacia 2s;
+  transition: 0.5s;
+}
+.dropdown-toggle {
+  transition: 0.5s;
+}
+.fa-user {
+  font-size: 25px;
+  transition: 0.5s;
+}
+.searchbutton {
+  padding: 5px 20px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: #2f2b26;
+  animation: topanimacia 2s;
+  transition: 0.5s;
+}
+.searchbutton:hover {
+  color: black;
+  background-color: #d0c8b4;
+  box-shadow: 0 0 10px gray;
+}
+.dropdown-toggle:hover,
+.fa-web-awesome:hover,
+.fa-user:hover {
+  transform: scale(1.2, 1.2);
+}
+.d-flex {
+  align-items: center;
+  gap: 5px;
+}
+.d-flex a {
+  color: black;
+  text-decoration: none;
+}
+.me-2 {
+  width: 150px;
+}
+.me-2:focus {
+  box-shadow: 0 0 10px gray;
+}
+@keyframes topanimacia {
+  from {
+    transform: scale(1.2, 1.2);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes animacia {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+  }
+}
+.chat {
+  text-decoration: none;
+  color: black;
+  animation: topanimacia 2s;
+  position: fixed;
+  right: 60px;
+  bottom: 0;
+  font-size: 30px;
+}
+footer ul {
+  list-style: none;
+}
+footer a {
+  color: black;
+  text-decoration: none;
+}
+footer .box3 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footform {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.footform .top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: white;
+}
+.footform input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-bottom: 1px solid black;
+  height: 45px;
+}
+.footform .cent {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.footform .cent .yes {
+  display: flex;
+  align-items: center;
+}
+.footform .bot {
+  display: flex;
+  align-self: flex-end;
+  gap: 10px;
+  font-size: 20px;
+}
+.box1 {
+  grid-area: erti;
+}
+.box2 {
+  grid-area: ori;
+}
+
+.box3 {
+  grid-area: sami;
+}
+.box4 {
+  grid-area: otxi;
+}
+.box5 {
+  grid-area: xuti;
+  margin-bottom: 30px;
+}
+.box4 .cent button {
+  color: white;
+  padding: 10px;
+  background-color: #2f2b26;
+  transition: 0.5s;
+}
+.box4 .cent button:hover {
+  color: black;
+  background-color: white;
+}
+.box4 .bot a {
+  transition: 0.5s;
+}
+.box4 .bot a:hover {
+  transform: scale(1.5, 1.5);
+}
+footer {
+  font-family: merienda;
+  padding: 50px 30px 10px 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 350px;
+  grid-template-areas:
+    "erti ori sami otxi"
+    "xuti xuti xuti xuti";
+}
+@font-face {
+  font-family: play;
+  src: url(/fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: lobster;
+  src: url(/fonts/Lobster-Regular.ttf);
+}
+@font-face {
+  font-family: molle;
+  src: url(/fonts/Molle-Italic.ttf);
+}
+@font-face {
+  font-family: ribeye;
+  src: url(/fonts/RibeyeMarrow-Regular.ttf);
+}
+@font-face {
+  font-family: send;
+  src: url(/fonts/SendFlowers-Regular.ttf);
+}
+@font-face {
+  font-family: write;
+  src: url(/fonts/writeHU-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: display;
+  src: url(/fonts/Display-Medium.ttf);
+}
+@font-face {
+  font-family: alice;
+  src: url(/fonts/Alice-Regular.ttf);
+}
+@font-face {
+  font-family: lusitana;
+  src: url(/fonts/Lusitana-Regular.ttf);
+}
+@font-face {
+  font-family: merienda;
+  src: url(/fonts/Merienda-VariableFont_wght.ttf);
+}
+@media screen and (max-width: 1280px) {
+  .me-2 {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .dropdown-toggle:hover,
+  .fa-web-awesome:hover,
+  .fa-user:hover {
+    transform: scale(1, 1.5);
+  }
+  footer {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "erti ori sami"
+      "otxi otxi otxi"
+      "xuti xuti xuti";
+  }
+}
+@media screen and (max-width: 650px) {
+  nav {
+    padding-inline: 0 !important;
+  }
+  footer {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "erti"
+      "ori"
+      "otxi"
+      "sami"
+      "xuti";
+  }
+}
+.slide {
+  margin: 0 200px;
+}
+.next {
+  margin-top: 20px;
+  padding-inline: 150px;
+}
+@media screen and (max-width: 1280px) {
+  .me-2 {
+    width: 120px;
+  }
+  section {
+    display: block;
+    flex-direction: column;
+  }
+  section .leftimage {
+    width: 100%;
+    background-position: center;
+    background-position: 0 -400px;
+    background-size: cover;
+    z-index: 0;
+  }
+  section .rightimage {
+    width: 100%;
+    background-position: center;
+    background-position: 0 -100px;
+    background-size: cover;
+  }
+  .ourstory {
+    padding: 0 50px;
+  }
+  article {
+    flex-direction: column;
+  }
+  article .left {
+    width: 100%;
+    background-position: center;
+    background-position: 0 0;
+    position: sticky;
+    top: 0;
+  }
+  article .right {
+    width: 100%;
+    background-position: center;
+    background-position: 0 0;
+  }
+  main {
+    justify-content: center;
+  }
+  .get {
+    flex-direction: column;
+  }
+  .get .left {
+    width: 100%;
+  }
+  .get .right {
+    width: 100%;
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .dropdown-toggle:hover,
+  .fa-web-awesome:hover,
+  .fa-user:hover {
+    transform: scale(1, 1.5);
+  }
+  section .leftimage {
+    background-position: center;
+    background-position: 0 -200px;
+  }
+  section .rightimage {
+    background-position: center;
+    background-position: 0 0;
+  }
+  article .left {
+    background-position: center;
+    background-position: 0 0;
+  }
+  article .right {
+    background-position: center;
+    background-position: 0 0;
+  }
+  footer {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "erti ori sami"
+      "otxi otxi otxi"
+      "xuti xuti xuti";
+  }
+}
+@media screen and (max-width: 650px) {
+  nav {
+    padding-inline: 0 !important;
+  }
+  section .leftimage {
+    background-position: 0 -20px;
+  }
+  section .rightimage {
+    width: 100%;
+    background-position: -200px 0;
+  }
+  .card {
+    width: 100%;
+  }
+  .get .left img {
+    width: 200px;
+    height: 235px;
+  }
+  footer {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "erti"
+      "ori"
+      "otxi"
+      "sami"
+      "xuti";
+  }
+  .get .right form {
+    padding: 10px;
+  }
+  .get .right .area .up {
+    flex-direction: column;
+  }
+  .get .right .area .center {
+    flex-direction: column;
+  }
+}

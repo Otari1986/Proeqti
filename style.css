@@ -1,0 +1,579 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+nav {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  height: 50px;
+  padding-inline: 30px !important;
+  font-family: play;
+}
+.aqtiuri {
+  color: #dcba65;
+}
+.aqtiuri:hover {
+  color: #dcba65;
+}
+.fa-web-awesome {
+  font-size: 30px;
+  margin-right: 20px;
+  color: #dcba65;
+  animation: animacia 2s;
+  transition: 0.5s;
+}
+.dropdown-toggle {
+  transition: 0.5s;
+}
+.fa-user {
+  font-size: 25px;
+  transition: 0.5s;
+}
+.searchbutton {
+  padding: 5px 20px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: #2f2b26;
+  animation: topanimacia 2s;
+  transition: 0.5s;
+}
+.searchbutton:hover {
+  color: black;
+  background-color: #d0c8b4;
+  box-shadow: 0 0 10px gray;
+}
+.dropdown-toggle:hover,
+.fa-web-awesome:hover,
+.fa-user:hover {
+  transform: scale(1.2, 1.2);
+}
+.d-flex {
+  align-items: center;
+  gap: 5px;
+}
+.d-flex a {
+  color: black;
+  text-decoration: none;
+}
+.me-2 {
+  width: 150px;
+}
+.me-2:focus {
+  box-shadow: 0 0 10px gray;
+}
+section {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+}
+section .leftimage {
+  width: 50%;
+  height: 150vh;
+  background-image: url("image/1.jpg");
+  background-size: cover;
+  position: sticky;
+  top: -100px;
+  z-index: 1;
+}
+section .rightimage {
+  width: 50%;
+  height: 1300px;
+  background-image: url("image/2.avif");
+  background-position: -180px;
+  position: relative;
+}
+section .art {
+  width: 60%;
+  height: 35%;
+  background-color: #d0c8b4a1;
+  position: absolute;
+  top: 230px;
+  padding: 50px 30px;
+  font-family: lobster;
+}
+section .art h1 {
+  margin-bottom: 100px;
+}
+section .art button {
+  padding: 10px 30px;
+  color: white;
+  background-color: #2f2b26;
+  margin-top: 30px;
+  animation: animacia 2s;
+  transition: 0.5s;
+}
+section .art button:hover {
+  color: black;
+  background-color: transparent;
+}
+.ourstory {
+  background-color: white;
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 250px;
+  font-family: molle;
+}
+article {
+  display: flex;
+  width: 100%;
+}
+article .left {
+  width: 50%;
+  height: 900px;
+  background-image: url(image/3.avif);
+  background-size: cover;
+}
+article .right {
+  width: 50%;
+  height: 100vh;
+  background-image: url(image/4.avif);
+  background-size: cover;
+  position: sticky;
+  top: 0;
+}
+.portfolio {
+  height: 250px;
+  font-size: 50px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: ribeye;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  font-family: ribeye;
+}
+.card {
+  width: 475px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 27px;
+  gap: 45px;
+  border: none;
+  position: relative;
+}
+.card img {
+  width: 100%;
+}
+.card .shadow {
+  width: 475px;
+  height: 473px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+.card:hover .shadow {
+  opacity: 1;
+}
+main a {
+  color: black;
+  text-decoration: none;
+}
+.center {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center button {
+  padding: 10px 30px;
+  color: white;
+  background-color: #2f2b26;
+  transition: 0.5s;
+  font-family: send;
+  font-size: 20px;
+}
+.center button:hover {
+  color: black;
+  background-color: transparent;
+}
+.get {
+  display: flex;
+  width: 100%;
+  font-family: write;
+}
+.get .left {
+  width: 50%;
+  color: white;
+  background-color: #2f2b26;
+  display: flex;
+  gap: 200px;
+  flex-direction: column;
+  padding: 50px;
+}
+.get .left img {
+  width: 340px;
+  height: 365px;
+  object-fit: cover;
+}
+.get .right {
+  width: 50%;
+  background-image: url(image/12.avif);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.get .right form {
+  background-color: #d0c8b4d1;
+  padding: 50px;
+}
+.get .right .area {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.get .right .area .up {
+  display: flex;
+  gap: 20px;
+}
+.get .right .area .first {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.get .right .area .last {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.get .right .area .center {
+  display: flex;
+  gap: 20px;
+}
+.get .right .area .email {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.get .right .area .phone {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.get .right .down {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.get .right .long {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.get .right .area input {
+  height: 45px;
+  border: 1px solid black;
+  outline: none;
+  background-color: transparent;
+  padding: 10px;
+}
+.get .right .down textarea {
+  resize: none;
+  height: 100px;
+  border: 1px solid black;
+  outline: none;
+  background-color: transparent;
+  padding: 10px;
+}
+.get .right .down button {
+  color: white;
+  padding: 10px;
+  background-color: #2f2b26;
+  transition: 0.5s;
+}
+.get .right .down button:hover {
+  color: black;
+  background-color: white;
+}
+@keyframes topanimacia {
+  from {
+    transform: scale(1.2, 1.2);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes animacia {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+  }
+}
+.chat {
+  text-decoration: none;
+  color: black;
+  animation: topanimacia 2s;
+  position: fixed;
+  right: 60px;
+  bottom: 0;
+  font-size: 30px;
+}
+footer ul {
+  list-style: none;
+}
+footer a {
+  color: black;
+  text-decoration: none;
+}
+footer .box3 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footform {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.footform .top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: white;
+}
+.footform input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-bottom: 1px solid black;
+  height: 45px;
+}
+.footform .cent {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.footform .cent .yes {
+  display: flex;
+  align-items: center;
+}
+.footform .bot {
+  display: flex;
+  align-self: flex-end;
+  gap: 10px;
+  font-size: 20px;
+}
+.box1 {
+  grid-area: erti;
+}
+.box2 {
+  grid-area: ori;
+}
+
+.box3 {
+  grid-area: sami;
+}
+.box4 {
+  grid-area: otxi;
+}
+.box5 {
+  grid-area: xuti;
+  margin-bottom: 30px;
+}
+.box4 .cent button {
+  color: white;
+  padding: 10px;
+  background-color: #2f2b26;
+  transition: 0.5s;
+}
+.box4 .cent button:hover {
+  color: black;
+  background-color: white;
+}
+.box4 .bot a {
+  transition: 0.5s;
+}
+.box4 .bot a:hover {
+  transform: scale(1.5, 1.5);
+}
+footer {
+  font-family: merienda;
+  padding: 50px 30px 10px 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 350px;
+  grid-template-areas:
+    "erti ori sami otxi"
+    "xuti xuti xuti xuti";
+}
+@font-face {
+  font-family: play;
+  src: url(/fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: lobster;
+  src: url(/fonts/Lobster-Regular.ttf);
+}
+@font-face {
+  font-family: molle;
+  src: url(/fonts/Molle-Italic.ttf);
+}
+@font-face {
+  font-family: ribeye;
+  src: url(/fonts/RibeyeMarrow-Regular.ttf);
+}
+@font-face {
+  font-family: send;
+  src: url(/fonts/SendFlowers-Regular.ttf);
+}
+@font-face {
+  font-family: write;
+  src: url(/fonts/writeHU-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: display;
+  src: url(/fonts/Display-Medium.ttf);
+}
+@font-face {
+  font-family: alice;
+  src: url(/fonts/Alice-Regular.ttf);
+}
+@font-face {
+  font-family: lusitana;
+  src: url(/fonts/Lusitana-Regular.ttf);
+}
+@font-face {
+  font-family: merienda;
+  src: url(/fonts/Merienda-VariableFont_wght.ttf);
+}
+@media screen and (max-width: 1280px) {
+  .me-2 {
+    width: 120px;
+  }
+  section {
+    display: block;
+    flex-direction: column;
+  }
+  section .leftimage {
+    width: 100%;
+    background-position: center;
+    background-position: 0 -400px;
+    background-size: cover;
+    z-index: 0;
+  }
+  section .rightimage {
+    width: 100%;
+    background-position: center;
+    background-position: 0 -100px;
+    background-size: cover;
+  }
+  .ourstory {
+    padding: 0 50px;
+  }
+  article {
+    flex-direction: column;
+  }
+  article .left {
+    width: 100%;
+    background-position: center;
+    background-position: 0 0;
+    position: sticky;
+    top: 0;
+  }
+  article .right {
+    width: 100%;
+    background-position: center;
+    background-position: 0 0;
+  }
+  main {
+    justify-content: center;
+  }
+  .get {
+    flex-direction: column;
+  }
+  .get .left {
+    width: 100%;
+  }
+  .get .right {
+    width: 100%;
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .dropdown-toggle:hover,
+  .fa-web-awesome:hover,
+  .fa-user:hover {
+    transform: scale(1, 1.5);
+  }
+  section .leftimage {
+    background-position: center;
+    background-position: 0 -200px;
+  }
+  section .rightimage {
+    background-position: center;
+    background-position: 0 0;
+  }
+  article .left {
+    background-position: center;
+    background-position: 0 0;
+  }
+  article .right {
+    background-position: center;
+    background-position: 0 0;
+  }
+  footer {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "erti ori sami"
+      "otxi otxi otxi"
+      "xuti xuti xuti";
+  }
+}
+@media screen and (max-width: 650px) {
+  nav {
+    padding-inline: 0 !important;
+  }
+  section .leftimage {
+    background-position: 0 -20px;
+  }
+  section .rightimage {
+    width: 100%;
+    background-position: -200px 0;
+  }
+  .card {
+    width: 100%;
+  }
+  .get .left img {
+    width: 200px;
+    height: 235px;
+  }
+  footer {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "erti"
+      "ori"
+      "otxi"
+      "sami"
+      "xuti";
+  }
+  .get .right form {
+    padding: 10px;
+  }
+  .get .right .area .up {
+    flex-direction: column;
+  }
+  .get .right .area .center {
+    flex-direction: column;
+  }
+}
