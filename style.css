@@ -546,6 +546,9 @@ footer {
   nav {
     padding-inline: 0 !important;
   }
+  .me-2 {
+  width: 150px;
+}
   .mb-2 {
   background-color: gray;
 }
