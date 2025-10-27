@@ -1,7 +1,8 @@
 .next {
-  text-align: end;
   margin-right: 40px;
   font-size: 25px;
+  display: flex;
+  justify-content: flex-end;
 }
 .next a {
   color: black;
@@ -9,20 +10,28 @@
 }
 @media screen and (max-width: 1280px) {
   .slide {
-    margin: 0 150px;
+    margin: 50px 150px;
+  }
+  .next {
+    padding-inline: 120px;
+    font-size: 25px;
   }
 }
 @media screen and (max-width: 1000px) {
   .slide {
-    margin: 0 50px;
+    margin: 50px;
+  }
+  .next {
+    padding-inline: 120px;
+    font-size: 25px;
   }
 }
 @media screen and (max-width: 650px) {
   .slide {
-    margin: 0 20px;
+    margin: 50px 20px;
   }
   .next {
-    padding-inline: 30px;
+    padding-inline: 10px;
     font-size: 15px;
   }
 }

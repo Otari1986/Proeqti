@@ -10,27 +10,28 @@
 }
 @media screen and (max-width: 1280px) {
   .slide {
-    margin: 0 150px;
+    margin: 50px 150px;
   }
   .next {
-    margin-inline: 20px;
+    padding-inline: 120px;
+    font-size: 25px;
   }
 }
 @media screen and (max-width: 1000px) {
   .slide {
-    margin: 0 50px;
+    margin: 50px;
   }
   .next {
-    margin-inline: 10px;
-    padding-inline: 50px;
+    padding-inline: 90px;
+    font-size: 25px;
   }
 }
 @media screen and (max-width: 650px) {
   .slide {
-    margin: 0 20px;
+    margin: 50px 20px;
   }
   .next {
-    padding-inline: 20px;
+    padding-inline: 10px;
     font-size: 15px;
   }
 }
