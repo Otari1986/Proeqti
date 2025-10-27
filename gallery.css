@@ -94,8 +94,8 @@ article a .card .shadow:hover {
     margin-bottom: 20px;
   }
   .next {
+    margin-top: 0px;
     padding-inline: 30px;
     font-size: 15px;
-    margin-top: 0;
   }
 }
