@@ -22,6 +22,7 @@
     margin: 0 20px;
   }
   .next {
-    font-size: 20px;
+    padding-inline: 30px;
+    font-size: 15px;
   }
 }

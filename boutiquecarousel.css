@@ -21,7 +21,7 @@
     margin: 0 20px;
   }
   .next {
-    margin-left: 10px;
-    font-size: 20px;
+    padding-inline: 10px;
+    font-size: 15px;
   }
 }
