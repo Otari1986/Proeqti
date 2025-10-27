@@ -48,7 +48,7 @@ article a .card .shadow:hover {
 .next {
   display: flex;
   justify-content: space-between;
-  margin-inline: 40px;
+  margin-inline: 10px;
   font-size: 25px;
 }
 .next a {
