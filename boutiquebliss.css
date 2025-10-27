@@ -84,4 +84,7 @@ article a .card .shadow:hover {
     padding: 40px;
     gap: 10px;
   }
+  article a .card {
+    margin-bottom: 20px;
+  }
 }
