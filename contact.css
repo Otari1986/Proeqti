@@ -124,4 +124,10 @@ main .right {
   main .right form {
     padding: 10px;
   }
+  main .right form .area .up {
+    flex-direction: column;
+  }
+  main .right form .area .center {
+    flex-direction: column;
+  }
 }

@@ -368,6 +368,7 @@ footer .box3 {
 .footform .cent .yes {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 .footform .bot {
   display: flex;

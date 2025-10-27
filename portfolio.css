@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 .portfolio {
-  height: 250px;
+  margin-top: 50px;
+  margin-bottom: 30px;
   font-size: 50px;
   background-color: white;
   display: flex;
@@ -46,4 +47,9 @@ main {
 main a {
   color: black;
   text-decoration: none;
+}
+@media screen and (max-width: 650px) {
+  .card {
+    width: 100%;
+  }
 }
