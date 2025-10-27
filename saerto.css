@@ -350,6 +350,12 @@ footer {
   nav {
     padding-inline: 0 !important;
   }
+  .mb-2 {
+  background-color: gray;
+}
+.d-flex {
+  background-color: gray;
+}
   section .leftimage {
     background-position: 0 -20px;
   }

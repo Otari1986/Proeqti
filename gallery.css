@@ -80,6 +80,9 @@ article a .card .shadow:hover {
   }
 }
 @media screen and (max-width: 650px) {
+  nav {
+    padding-inline: 0 !important;
+  }
   header {
     grid-template-columns: 1fr;
     padding: 40px;
