@@ -126,13 +126,18 @@ article a .card .shadow:hover {
 }
 @media screen and (max-width: 1280px) {
   header {
-    padding: 50px;
+    padding: 40px;
     gap: 50px;
   }
 }
 @media screen and (max-width: 1000px) {
+  .dropdown-toggle:hover,
+  .fa-web-awesome:hover,
+  .fa-user:hover {
+    transform: scale(1, 1.5);
+  }
   header {
-    padding: 30px;
+    padding: 40px;
     gap: 30px;
   }
   article {

@@ -512,7 +512,11 @@ footer {
     padding: 30px;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 991px) {
+  .navbar-collapse {
+  background-color: gray;
+  padding: 5px;
+}
   .dropdown-toggle:hover,
   .fa-web-awesome:hover,
   .fa-user:hover {
@@ -548,12 +552,6 @@ footer {
   }
   .me-2 {
   width: 150px;
-}
-  .mb-2 {
-  background-color: gray;
-}
-.d-flex {
-  background-color: gray;
 }
   section .leftimage {
     background-position: 0 -20px;

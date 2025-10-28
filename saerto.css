@@ -223,39 +223,6 @@ footer {
   font-family: merienda;
   src: url(/fonts/Merienda-VariableFont_wght.ttf);
 }
-@media screen and (max-width: 1280px) {
-  .me-2 {
-    width: 120px;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .dropdown-toggle:hover,
-  .fa-web-awesome:hover,
-  .fa-user:hover {
-    transform: scale(1, 1.5);
-  }
-  footer {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-      "erti ori sami"
-      "otxi otxi otxi"
-      "xuti xuti xuti";
-  }
-}
-@media screen and (max-width: 650px) {
-  nav {
-    padding-inline: 0 !important;
-  }
-  footer {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "erti"
-      "ori"
-      "otxi"
-      "sami"
-      "xuti";
-  }
-}
 .slide {
   margin: 50px 230px;
 }
@@ -316,7 +283,11 @@ footer {
     padding: 30px;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 991px) {
+  .navbar-collapse {
+  background-color: gray;
+  padding: 5px;
+}
   .dropdown-toggle:hover,
   .fa-web-awesome:hover,
   .fa-user:hover {
