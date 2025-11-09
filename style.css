@@ -75,7 +75,7 @@ section {
 }
 section .leftimage {
   width: 50%;
-  height: 150vh;
+  height: 130vh;
   background-image: url("image/1.jpg");
   background-size: cover;
   position: sticky;
@@ -84,9 +84,10 @@ section .leftimage {
 }
 section .rightimage {
   width: 50%;
-  height: 1300px;
+  height: 1516px;
   background-image: url("image/2.avif");
-  background-position: -180px;
+  background-position: -100px;
+  background-size: cover;
   position: relative;
 }
 section .art {
@@ -129,7 +130,7 @@ article {
 }
 article .left {
   width: 50%;
-  height: 900px;
+  height: 1150px;
   background-image: url(image/3.avif);
   background-size: cover;
 }
